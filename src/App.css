@@ -1,38 +1,84 @@
 .App {
+  font-family: sans-serif;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+body{
+  font-family: Cerebri-Sans,Helvetica,Arial,sans-serif;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+}
+.head {
+    border: 3px solid #4f9452;
+    background-color: #fafffa;
+   
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .city {
+    color: #4f9452;
+    font-size: 15px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .weather {
+    font-size: 50px;
+    margin-top: -10px;
   }
+
+  .git {
+    display: inline;
+  }
+  .creator{
+    display: inline;
+  }
+  .creat{
+    margin-left: 270px;
+    opacity: 0.8;
+  }
+  li {
+    list-style-type: none;
+}
+
+.weather-app{
+  max-width: 800px;
+  border-radius: 5px;
+  margin: 40px auto;
+
+
+}
+#show-city ,#weath {
+  font-size: 75px;
+  font-weight: 100px;
+  line-height: 50px;
+  opacity: 0.7;
+}
+
+#fahrenheit , #cel
+{
+  display: inline;
+}
+
+.week-day{
+  color:#4E944F;
+  opacity: 0.7;
+  padding-left: 5px;
+}
+.max-temp{
+  color: #4E944F;
+}
+
+.min-temp{
+  color:#4E944F;
+  opacity: 0.5;
+}
+.camo{
+  color: #4E944F;
+  font-weight: 100px;
+}
+
+#date , #time , #humid , #wind , #desc{
+  color: #000;
+  opacity: 0.5;
+}
+
+a{
+  text-decoration: none;
+  color: #4E944F;
 }
