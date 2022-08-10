@@ -10,7 +10,7 @@ function App() {
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <div className="container">
+    <div className="container ">
       <div className="head mt-4 weather-app">
         <div className="row">
           <form className="mx-3 my-5">
@@ -66,6 +66,7 @@ function App() {
           </div>
         </div>
       </div>
+      <span class="coder"><a href='https://github.com/ShivaAbf/weather-react-project' >open sorce code</a> by shiva Aboufazeli</span>
     </div>
   </div>
   )}
