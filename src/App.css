@@ -1,87 +1,76 @@
-.App {
-  font-family: sans-serif;
-  text-align: center;
+
+.head{
+    border: 1px solid;
+    max-width: 600px;
+    margin: 5px auto;
+    padding: 10px;
+    border-radius: 4px;
+}
+.search-btn{
+    display: flex;
+    justify-content: flex-end;
 }
 
-body{
-  font-family: Cerebri-Sans,Helvetica,Arial,sans-serif;
+ h1{
+    text-align: right;
+    font-size: 22px;
+    line-height: 26px;
+    font-family: Google Sans,arial,sans-serif;
+    font-weight: 400;
+    color: #202124;
 }
-.head {
-    border: 3px solid #4f9452;
-    background-color: #fafffa;
-   
-  }
-  .city {
-    color: #4f9452;
-    font-size: 15px;
-  }
-  
-  .weather {
-    font-size: 50px;
-    margin-top: -10px;
-  }
 
-  .git {
+.city-info{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.city-info h2 {
+    text-align: right;
+    color: #70757a;
+    font-size: 16px;
+    line-height: 10px;
+    font-family: arial,sans-serif;
+}
+
+.weather-info{
+    display: flex;
+    align-items: center;
+}
+
+.weather-info p{
     display: inline;
-  }
-  .creator{
-    display: inline;
-  }
-  .creat{
-    margin-left: 270px;
-    opacity: 0.8;
-  }
-  li {
+    font-family: Google Sans,arial,sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    color: #202124;
+    margin-top: 20px;
+    
+}
+
+ul{
+    text-decoration: none;
+    color: #70757a;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 16px;
+    padding-left: 9px;
+    padding-top: 6px;
+}
+
+li{
     list-style-type: none;
+    line-height: 19px;
 }
 
-.weather-app{
-  max-width: 800px;
-  border-radius: 5px;
-  margin: 40px auto;
-
-
-}
-#show-city ,#weath {
-  font-size: 75px;
-  font-weight: 100px;
-  line-height: 50px;
-  opacity: 0.7;
+.unit{
+display: flex;
+align-self: start;
+font-size: 16px;
+line-height: 30px;
+margin-top: 15px;
+padding-left: 6px;
 }
 
-#fahrenheit , #cel
-{
-  display: inline;
-}
 
-.week-day{
-  color:#4E944F;
-  opacity: 0.7;
-  padding-left: 5px;
-}
-.max-temp{
-  color: #4E944F;
-}
-
-.min-temp{
-  color:#4E944F;
-  opacity: 0.5;
-}
-.camo{
-  color: #4E944F;
-  font-weight: 100px;
-}
-
-#date , #time , #humid , #wind , #desc{
-  color: #000;
-  opacity: 0.5;
-}
-
-a{
-  text-decoration: none;
-  color: #4E944F;
-}
-
-.coder{
- margin: 256px;
-}
