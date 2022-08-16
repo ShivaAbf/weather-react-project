@@ -26,11 +26,11 @@
     flex-direction: column;
 }
 
-.city-info h2 {
+.city-info div {
     text-align: right;
     color: #70757a;
     font-size: 16px;
-    line-height: 10px;
+    line-height: 30px;
     font-family: arial,sans-serif;
 }
 
@@ -46,7 +46,7 @@
     font-size: 48px;
     color: #202124;
     margin-top: 20px;
-    
+    margin-left: 5px;
 }
 
 ul{
