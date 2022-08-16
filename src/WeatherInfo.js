@@ -1,5 +1,6 @@
 import React from "react";
 import FormatDate from "./FormatDate";
+import Unitconvention from "./Unitconvention";
 import WeatherIcon from "./WeatherIcon"
 
 export default function WeatherInfo(props){
@@ -8,8 +9,7 @@ export default function WeatherInfo(props){
         <div className="col-md-8 weather-info">
                {/* <img src={props.information.icon} alt="icon of weather" /> */}
                <WeatherIcon code={props.information.icon} size={45} />
-               <p>{Math.round(props.information.Temperature)}</p>
-               <h3 className="unit">°C | °F</h3>
+               <Unitconvention temp={props.information.Temperature} />
                <ul>
                    <li>description: {props.information.description}</li>
                    <li>Humidity: {props.information.humidity}%</li>

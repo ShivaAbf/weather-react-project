@@ -49,6 +49,11 @@
     margin-left: 5px;
 }
 
+.weather-info span{
+    display: flex;
+    flex-direction: row;
+}
+
 ul{
     text-decoration: none;
     color: #70757a;
