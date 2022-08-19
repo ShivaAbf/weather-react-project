@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 
-export default function Unitconvertion(props){
+export default function Unitconvention(props){
     let [unit , setUnit] = useState("celsius")
     
     function showFahrenheit(event){

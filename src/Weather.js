@@ -1,13 +1,16 @@
 import axios from "axios";
 import React , {useState} from "react";
 import WeatherInfo from "./WeatherInfo";
+import WeatherForecast from "./WeatherForecast";
 
 export default function Weather(props) {
    
     let [WeatherData , setWeatherData] = useState({ ready: false });
     let [city, setCity] = useState(props.defaultCity);
    function settingData(response){
+    
 setWeatherData({
+
           ready: true,
           Temperature : response.data.main.temp ,
           description: response.data.weather[0].main ,
@@ -15,8 +18,10 @@ setWeatherData({
           wind:response.data.wind.speed,
           icon:response.data.weather[0].icon,
           date:new Date(response.data.dt *1000),
-          city: response.data.name
+          city: response.data.name,
+          coordinates: response.data.coord,
         }
+    
 )}
 
     function handleSubmit(event){
@@ -48,7 +53,9 @@ setWeatherData({
                 </div>
             </form>
         <WeatherInfo information={WeatherData} />
+        <WeatherForecast coordInfo={WeatherData.coordinates} />
           </div>
+          <span className="coder-links">This project was coded by <a href="https://fancy-pastelito-ab221e.netlify.app/about.html">Shiva Aboufazeli</a> and is <a href="https://github.com/ShivaAbf/weather-react-project">open-sourced on GitHub</a> and hosted on <a href="https://spiffy-palmier-f78dc7.netlify.app/">Netlify</a></span>
         </div>
     );}
     else{
